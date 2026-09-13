@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Agulhas Current Energy">
+  <rect width="128" height="128" rx="28" fill="#061018"/>
+  <circle cx="64" cy="64" r="52" fill="none" stroke="#2eb8c7" stroke-width="3"/>
+  <path
+    d="M22 62c16-26 26-26 42 0s26 26 42 0"
+    fill="none"
+    stroke="#4ecbda"
+    stroke-width="3.6"
+    stroke-linecap="round"
+    opacity="0.8"
+  />
+  <path
+    d="M22 76c16-26 26-26 42 0s26 26 42 0"
+    fill="none"
+    stroke="#2eb8c7"
+    stroke-width="7"
+    stroke-linecap="round"
+  />
+  <path
+    d="M22 90c16-26 26-26 42 0s26 26 42 0"
+    fill="none"
+    stroke="#2eb8c7"
+    stroke-width="4.2"
+    stroke-linecap="round"
+    opacity="0.42"
+  />
+</svg>
