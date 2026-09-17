@@ -30,8 +30,12 @@ const INTRO = [
 
 const CURRENT_FACTS = [
   {
+    k: "Class",
+    v: "Western boundary current — on the western boundary of the Indian Ocean, the same class as the Gulf Stream and Kuroshio.",
+  },
+  {
     k: "Path",
-    v: "Eastern boundary current flowing south along South Africa’s east coast.",
+    v: "Flows south along South Africa’s east coast, then retroflects east into the Indian Ocean.",
   },
   { k: "Width", v: "40–100 km across the core of the flow." },
   { k: "Depth", v: "Energetic from the surface to 2,000 m." },
@@ -192,13 +196,34 @@ function Current() {
             The Agulhas Current
           </p>
           <h2 className="font-display mt-3 text-3xl leading-tight tracking-tight sm:text-4xl">
-            An eastern boundary current, running year-round
+            A western boundary current, running year-round
           </h2>
           <p className="mt-5 text-[1.05rem] leading-relaxed text-muted">
             Second only to the Gulf Stream, the Agulhas Current carries 70–80
-            million cubic metres of water every second. That volume, at average
-            speeds of 1.4 m/s and peaks above 2.5 m/s, is the resource.
+            million cubic metres of water every second. We call it — and the
+            Gulf Stream and Kuroshio — a western boundary current because it
+            rides the western boundary of the ocean. Western boundary currents
+            are narrow, deep and fast. Eastern boundary currents are slow and
+            broad.
           </p>
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+            <div className="rounded-lg border border-border bg-bg p-4">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-accent">
+                Western
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-fg">
+                Narrow, deep and fast — Agulhas, Gulf Stream, Kuroshio.
+              </p>
+            </div>
+            <div className="rounded-lg border border-border bg-bg p-4">
+              <p className="text-xs font-medium uppercase tracking-[0.14em] text-subtle">
+                Eastern
+              </p>
+              <p className="mt-1 text-sm leading-relaxed text-muted">
+                Slow and broad.
+              </p>
+            </div>
+          </div>
           <ul className="mt-8 space-y-4">
             {CURRENT_FACTS.map((f) => (
               <li key={f.k} className="flex gap-4 border-t border-border pt-4">
@@ -213,12 +238,12 @@ function Current() {
         <figure className="overflow-hidden rounded-xl border border-border">
           <img
             src="/current-map.jpg"
-            alt="Satellite view of the Agulhas Current along South Africa’s east coast, showing southward flow and retroflection"
+            alt="Satellite view of southern Africa: the Agulhas Current hugging the east coast, then retroflecting east south of Cape Agulhas"
             className="aspect-[4/3] w-full object-cover"
           />
           <figcaption className="bg-surface-2 px-4 py-3 text-xs text-muted">
-            The current core hugs the shelf before retroflecting into the Indian
-            Ocean.
+            South of Cape Agulhas the current retroflects, turning east back
+            into the Indian Ocean.
           </figcaption>
         </figure>
       </div>
@@ -255,7 +280,7 @@ function Energy() {
             <FactCard
               icon={<Zap className="size-4" />}
               title="1 MW turbine"
-              body="Enough electricity for about 1,000 homes."
+              body="Up to 85 suburban homes — about 12 kW per home."
             />
             <FactCard
               icon={<Gauge className="size-4" />}
